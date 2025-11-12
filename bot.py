@@ -85,5 +85,8 @@ async def time_command(interaction: discord.Interaction, city: str):
     await interaction.response.send_message(embed=embed)
 
 # --- RUN ---
+from dotenv import load_dotenv
 import os
+
+load_dotenv()  # reads .env file
 bot.run(os.getenv("DISCORD_BOT_TOKEN"))
