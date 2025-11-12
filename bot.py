@@ -47,5 +47,5 @@ async def time_command(interaction: discord.Interaction, city: str):
     await interaction.response.send_message(embed=embed)
 
 # --- RUN ---
+import os
 bot.run(os.getenv("DISCORD_BOT_TOKEN"))
-
